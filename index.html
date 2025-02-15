@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina Creators Agency</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            color: #fff;
+            line-height: 1.6;
+        }
+        .header {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        .logo {
+            width: 200px;
+            margin: 0 auto;
+            display: block;
+        }
+        .hero {
+            text-align: center;
+            padding: 8rem 2rem 4rem;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('pattern.svg');
+        }
+        .section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        h2 {
+            color: #e94560;
+            margin-bottom: 1.5rem;
+            font-size: 2.5rem;
+            text-align: center;
+        }
+        .cta-section {
+            text-align: center;
+            padding: 4rem 2rem;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        form {
+            max-width: 600px;
+            margin: 2rem auto;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 1rem;
+            margin: 0.5rem 0;
+            background: rgba(255, 255, 255, 0.1);
+            border: none;
+            color: #fff;
+            border-radius: 5px;
+        }
+        button {
+            background: #e94560;
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            font-size: 1.1rem;
+        }
+        button:hover {
+            background: #ff6b8a;
+        }
+        .icon {
+            font-size: 2rem;
+            color: #e94560;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h>Lumina Creators Agency</h1>
+    </header>
+    <section class="hero">
+        <h1>Elevate Your OnlyFans Career</h1>
+        <p>Premium Management & Growth Solutions for Top Creators</p>
+    </section>
+    <section class="section">
+        <h2>Why Choose Lumina?</h2>
+        <div class="card-container">
+            <div class="card">
+                <i class="icon fas fa-rocket"></i>
+                <h3>Comprehensive Services</h3>
+                <ul>
+                    <li>Content Strategy & Branding</li>
+                    <li>Account Management</li>
+                    <li>Social Media Marketing</li>
+                    <li>Legal Support</li>
+                </ul>
+            </div>
+            
+            <div class="card">
+                <i class="icon fas fa-chart-line"></i>
+                <h3>Revenue Structure</h3>
+                <ul>
+                    <li>40% Revenue Share After $10k/Month</li>
+                    <li>No Upfront Costs</li>
+                    <li>Bi-Weekly Payments</li>
+                </ul>
+            </div>
+            <div class="card">
+                <i class="icon fas fa-shield-alt"></i>
+                <h3>Partnership Benefits</h3>
+                <ul>
+                    <li>6-Month Minimum Term</li>
+                    <li>Exclusive Management</li>
+                    <li>Data Confidentiality</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="cta-section">
+        <h2>Start Your Success Journey</h2>
+        <form action="https://formspree.io/f/xdkalrba" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Tell us about your creator profile" rows="4" required></textarea>
+            <button type="submit">Apply Now</button>
+        </form>
+    </section>
+</body>
+</html>
